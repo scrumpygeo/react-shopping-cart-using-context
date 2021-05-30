@@ -8,6 +8,7 @@ const ProductCard = ({ product }) => {
       <div>
         <h5>£{product.price}</h5>
       </div>
+      <div className='productCard_btn'>Add to Cart</div>
     </div>
   )
 }

@@ -31,6 +31,20 @@
   margin-bottom: 20px;
 }
 
+.productCard_btn {
+  padding: 6px 10px;
+  cursor: pointer;
+  border-radius: 25px;
+  background-color: #ffa430;
+  border: none;
+  transition: all 0.2s ease-in;
+}
+
+.productCard_btn:hover {
+  background-color: #f1b668;
+  transform: translate(2px, -2px);
+}
+
 @media screen and (max-width: 1147px) {
   .productCard_container {
     width: 45%;
