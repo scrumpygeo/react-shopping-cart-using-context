@@ -45,6 +45,18 @@
   transform: translate(2px, -2px);
 }
 
+.productCard_price {
+  margin: 20px 0;
+}
+
+.rating {
+  margin: 20px 0;
+}
+
+.star_style {
+  color: #ffa41c;
+}
+
 @media screen and (max-width: 1147px) {
   .productCard_container {
     width: 45%;
