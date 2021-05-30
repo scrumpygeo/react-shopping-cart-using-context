@@ -15,7 +15,7 @@ const products = [
   },
   {
     id: '2',
-    name: 'Asakusa Rice Field During the Cock Festival at Otori Shrine.',
+    name: 'Asakusa Rice Field',
     image:
       'https://kiamaartgallery.files.wordpress.com/2015/05/utagawa-hiroshige-asakusa-rice-field-during-the-cock-festival-at-otori-shrine-1857.png',
     description:
