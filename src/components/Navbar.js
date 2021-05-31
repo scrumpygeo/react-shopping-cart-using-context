@@ -10,7 +10,11 @@ const Navbar = () => {
       <div className='nav_left'>Art Store</div>
       <div className='nav_right'>
         <div className='cart_icon'>
-          <i className='fa fa-shopping-cart' onclilck={showHideCart}></i>
+          <i
+            className='fa fa-shopping-cart'
+            aria-hidden='true'
+            onClick={showHideCart}
+          ></i>
           {cartItems.length > 0 && (
             <div className='item_count'>
               <span>{total}</span>
