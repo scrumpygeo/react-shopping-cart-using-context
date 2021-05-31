@@ -1,20 +1,6 @@
 const products = [
   {
     id: '1',
-    name: 'Bar at the Folies Bergère',
-    image:
-      'https://www.getty.edu/art/exhibitions/manet_bar/images/bar_detail.jpg',
-    description:
-      'Painting by Manet depicting a scene in the Folies Bergère nightclub in Paris. (1882).',
-    brand: 'Manet',
-    category: 'French Modernist',
-    price: 89.99,
-    countInStock: 10,
-    rating: 4.5,
-    numReviews: 12,
-  },
-  {
-    id: '2',
     name: 'Asakusa Rice Field',
     image:
       'https://kiamaartgallery.files.wordpress.com/2015/05/utagawa-hiroshige-asakusa-rice-field-during-the-cock-festival-at-otori-shrine-1857.png',
@@ -27,8 +13,9 @@ const products = [
     rating: 4.0,
     numReviews: 8,
   },
+
   {
-    id: '3',
+    id: '2',
     name: 'Jas de Bouffan, The Pool-Cezanne',
     image:
       'https://uploads7.wikiart.org/images/paul-cezanne/jas-de-bouffan-the-pool.jpg!Large.jpg',
@@ -42,7 +29,7 @@ const products = [
     numReviews: 12,
   },
   {
-    id: '4',
+    id: '3',
     name: 'Lady with an Ermine',
     image:
       'https://www.croxgallery.co.uk/media/catalog/product/cache/12/image/359x490/a4b764e5482f62fb51dae89ed3917009/l/a/lady-ermine-da-vinci.jpg',
@@ -56,7 +43,7 @@ const products = [
     numReviews: 12,
   },
   {
-    id: '5',
+    id: '4',
     name: 'The Great Wave Off Kanagawa',
     image:
       'https://johngaber.files.wordpress.com/2017/10/the-great-wave-off-kanagawa.jpg',
@@ -70,7 +57,7 @@ const products = [
     numReviews: 10,
   },
   {
-    id: '6',
+    id: '5',
     name: 'The Luncheon of the Boating Party',
     image:
       'https://upload.wikimedia.org/wikipedia/commons/1/19/Luncheon_of_the_Boating_Party_Renoir_1881.jpg',
@@ -81,6 +68,20 @@ const products = [
     price: 29.99,
     countInStock: 0,
     rating: 4,
+    numReviews: 12,
+  },
+  {
+    id: '6',
+    name: 'Bar at the Folies Bergère',
+    image:
+      'https://www.getty.edu/art/exhibitions/manet_bar/images/bar_detail.jpg',
+    description:
+      'Painting by Manet depicting a scene in the Folies Bergère nightclub in Paris. (1882).',
+    brand: 'Manet',
+    category: 'French Modernist',
+    price: 89.99,
+    countInStock: 10,
+    rating: 4.5,
     numReviews: 12,
   },
 ]
