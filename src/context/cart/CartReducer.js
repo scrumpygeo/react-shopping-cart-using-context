@@ -12,7 +12,6 @@ const cartReducer = (state, action) => {
       const item = action.payload
       const updatedCart = [...state.cartItems]
       const updatedItemIndex = updatedCart.findIndex((x) => x.id === item.id)
-      console.log(updatedItemIndex)
 
       // if item not already in cart, add it and set qyt to  1
       if (updatedItemIndex < 0) {
@@ -24,6 +23,8 @@ const cartReducer = (state, action) => {
         updatedItem.qty++
         updatedCart[updatedItemIndex] = updatedItem
       }
+
+      localStorage.setItem('cartItems', JSON.stringify(updatedCart))
 
       return { ...state, cartItems: updatedCart }
     }
@@ -46,10 +47,12 @@ const cartReducer = (state, action) => {
         updatedCart[updatedItemIndex] = updatedItem
       }
 
+      localStorage.setItem('cartItems', JSON.stringify(updatedCart))
       return { ...state, cartItems: updatedCart }
     }
 
     case CLEAR_CART: {
+      localStorage.removeItem('cartItems')
       return {
         ...state,
         cartItems: [],

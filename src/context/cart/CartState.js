@@ -6,7 +6,8 @@ import { SHOW_HIDE_CART, ADD_TO_CART, REMOVE_ITEM, CLEAR_CART } from '../types'
 const CartState = ({ children }) => {
   const initialState = {
     showCart: false,
-    cartItems: [],
+    // cartItems: [],
+    cartItems: JSON.parse(localStorage.getItem('cartItems') || '[]'),
   }
 
   const [state, dispatch] = useReducer(CartReducer, initialState)
