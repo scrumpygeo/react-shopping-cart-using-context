@@ -11,7 +11,7 @@ const cartReducer = (state, action) => {
     case ADD_TO_CART: {
       const item = action.payload
       const updatedCart = [...state.cartItems]
-      const updatedItemIndex = updatedCart.findIndex((x) => x._id === item._id)
+      const updatedItemIndex = updatedCart.findIndex((x) => x.id === item.id)
       console.log(updatedItemIndex)
 
       // if item not already in cart, add it and set qyt to  1
@@ -31,7 +31,7 @@ const cartReducer = (state, action) => {
       const item = action.payload
 
       const updatedCart = [...state.cartItems]
-      const updatedItemIndex = updatedCart.findIndex((x) => x._id === item)
+      const updatedItemIndex = updatedCart.findIndex((x) => x.id === item)
       // console.log(updatedItemIndex)
 
       const updatedItem = {
